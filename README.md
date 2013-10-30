@@ -1,5 +1,5 @@
 #AngularJS-Lettering.js
-CHECKING
+
 ## An AngularJS &lt;span&gt; injector for radical Web Typography
 
 This is a rework of the original Lettering.js which can be found here: https://github.com/davatron5000/Lettering.js.
