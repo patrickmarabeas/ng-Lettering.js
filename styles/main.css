@@ -13,12 +13,91 @@ body {
     background-color: #2f3c45;
 }
 
+.wrapper {
+    width: 960px;
+}
+
+header {
+    width: 220px;
+    position: fixed;
+    float: left;
+    margin: 50px 0px 0px 50px;
+    background-color: ;
+
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header h1 {
+    color: white;
+
+}
+
+header h2 {
+    color: white;
+    font-weight: normal;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    padding: 5px;
+    background-color: black;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+header li a {
+    color: white;
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+header li a.github {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 20px;
+}
+
+header p {
+    color: white;
+    padding: 5px;
+}
+
+header p a {
+    color: white;
+    text-decoration: none;
+}
+
+header p a:hover {
+    text-decoration: underline;
+}
+
+section {
+    width: 650px;
+    float: right;
+}
+
 code {
     display: block;
     color: #fff;
+    margin-bottom: 15px;
 }
 
-h1 {
+section h1 {
     font-family: 'franchiseregular', Verdana, Arial, sans-serif;
     font-size: 160px;
     text-transform: uppercase;
@@ -64,7 +143,7 @@ h1 span:hover {
     top: -65px;
 }
 
-h2 {
+section h2 {
     margin: 0;
     color: #2f3c45;
     font-family: Georgia, serif;
@@ -76,7 +155,7 @@ h2 {
     word-spacing: -0.5em;
 }
 
-h2 span {
+section h2 span {
     background-color: #fff;
 
     font-size: 30px;
