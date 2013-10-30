@@ -1,8 +1,8 @@
 #AngularJS-Lettering.js
 
-## An AngularJS directive <span> injector for radical Web Typography
+## An AngularJS &lt;span&gt; injector for radical Web Typography
 
-This is a rework of the original FitText which can be found here: https://github.com/davatron5000/Lettering.js.
+This is a rework of the original Lettering.js which can be found here: https://github.com/davatron5000/Lettering.js.
 
 	<span data-lettering="letters">This is a sentence</span>
 	

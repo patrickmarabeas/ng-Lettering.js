@@ -4,19 +4,19 @@ module.directive( 'lettering', [ function() {
 	return {
 		restrict: 'A',
 		scope: true,
-		link: function( $scope, $element, $attrs ) {
+		link: function( scope, element, attrs ) {
 
 			var methods = {
 				letters: function() {
-					injector( $element, '', 'char', '' );
+					injector( element, '', 'char', '' );
 				},
 				words: function() {
-					injector( $element, ' ', 'word', ' ' );
+					injector( element, ' ', 'word', ' ' );
 				},
 				lines: function() {
 					var r = 'eefec303079ad17405c889e092e105b0';
-					angular.element( $element ).children('br').replaceWith(r);
-					injector( $element, r, 'line', '');
+					angular.element( element ).children('br').replaceWith(r);
+					injector( element, r, 'line', '');
 				}
 			};
 
@@ -35,8 +35,8 @@ module.directive( 'lettering', [ function() {
 				}
 			}
 
-			$scope.method = $attrs.lettering || 'letters';
-			methods[$scope.method]();
+			scope.method = attrs.lettering || 'letters';
+			methods[scope.method]();
 
 		}
 	}
