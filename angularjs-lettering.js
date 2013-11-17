@@ -1,37 +1,36 @@
-var module = angular.module('lettering', []);
+var module = angular.module( 'lettering', [] );
 
-module.directive( 'lettering', [ function() {
+module.directive( 'lettering', [ function () {
 	return {
 		restrict: 'A',
-		scope: true,
-		link: function( scope, element, attrs ) {
+		link: function ( scope, element, attrs ) {
 
 			var methods = {
-				letters: function() {
+				letters: function () {
 					injector( element, '', 'char', '' );
 				},
-				words: function() {
+				words: function () {
 					injector( element, ' ', 'word', ' ' );
 				},
-				lines: function() {
+				lines: function () {
 					var r = 'eefec303079ad17405c889e092e105b0';
-					angular.element( element ).children('br').replaceWith(r);
-					injector( element, r, 'line', '');
+					angular.element( element ).children( 'br' ).replaceWith( r );
+					injector( element, r, 'line', '' );
 				}
 			};
 
-			function injector(element, splitter, klass, after) {
+			function injector( element, splitter, klass, after ) {
 				var a = element[0].innerHTML.split( splitter );
 				var inject = '';
 
 				if ( a.length ) {
-					angular.forEach(a, function(item, i) {
-						inject += '<span class="'+klass+(i+1)+'">'+item+'</span>'+after;
+					angular.forEach( a, function ( item, i ) {
+						inject += '<span class="' + klass + (i + 1) + '">' + item + '</span>' + after;
 					});
 					while ( element[0].hasChildNodes() ) {
-						element[0].removeChild(element[0].firstChild);
+						element[0].removeChild( element[0].firstChild );
 					}
-					element.append(inject);
+					element.append( inject );
 				}
 			}
 
