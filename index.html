@@ -1,55 +1,56 @@
 <!DOCTYPE html>
-<html data-ng-app="lettering">
+<html data-ng-app="ngLettering">
 <head>
     <title>AngularJS Lettering.js</title>
 
     <script type="text/javascript" src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
-    <script type="text/javascript" src="angularjs-lettering.js"></script>
+    <script type="text/javascript" src="ng-Lettering.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
 
 </head>
 <body>
 
-    <div class="wrapper">
+	<header id="top">
+		<a href="https://github.com/patrickmarabeas/ng-Lettering.js">View it on GitHub</a>
+		<a href="https://github.com/patrickmarabeas/ng-Lettering.js/zipball/master">Download ZIP</a>
+		<a href="https://github.com/patrickmarabeas/ng-Lettering.js/tarball/master">Download TAR</a>
+		<a href="https://github.com/patrickmarabeas">@patrickmarabeas</a>
+	</header>
 
-        <header>
+	<div class="page">
 
-            <h1>Angularjs-fittext.js</h1>
-            <h2>An AngularJS directive for inflating web type</h2>
+		<header>
 
-            <ul>
-                <li><a class="buttons github" href="https://github.com/patrickmarabeas/AngularJS-Lettering.js">View On GitHub</a></li>
-                <li class="download"><a class="buttons" href="https://github.com/patrickmarabeas/AngularJS-Lettering.js/zipball/master">Download ZIP</a></li>
-                <li class="download"><a class="buttons" href="https://github.com/patrickmarabeas/AngularJS-Lettering.js/tarball/master">Download TAR</a></li>
-            </ul>
+			<h1 data-lettering="words">/poke</h1>
+			<h2 data-lettering="letters">ng-Lettering.js</h2>
+			<h3 data-lettering="words">allows you to do radical typography</h3>
+			<h3 data-lettering="words">super easily (not even joking).</h3>
+			<h4 data-lettering="words">It also works brilliantly in a responsive layout.</h4>
 
-            <p class="header">This project is maintained by <a class="header name" href="https://github.com/patrickmarabeas">@patrickmarabeas</a></p>
-        </header>
+		</header>
 
+		<div id="content">
 
-        <section>
+			<h2>ng-Lettering.js is an AngularJS &lt;span&gt; injector for radical Web Typography.</h2>
 
-            <h1 data-lettering="letters">Lettering.js</h1>
-            <h2 data-lettering="words">An AngularJS &lt;span&gt; injector<br> for radical Web Typography</h2>
-            <h3>This is a rework of the original Lettering.js which can be found here: <a href="https://github.com/davatron5000/Lettering.js">https://github.com/davatron5000/Lettering.js</a>.</h3>
+			<p>Include it in your AngularJS application</p>
 
-            <code>
-                &lt;h1 data-lettering="letters"&gt;Some text which will inject spans around each character&lt;/h1&gt;
-            </code>
+			<code>var myApp = angular.module( 'myApp', [ 'ngLettering' ] );</code>
 
-            <code>
-                &lt;div data-lettering="words"&gt;Text which will have spans injected around each word&lt;/div&gt;
-            </code>
+			<p>Apply it to your text</p>
 
-            <code>
-                &lt;span data-lettering="lines"&gt;A slab of text &lt;/br&gt; which will inject spans in place &lt;/br&gt; of each br&lt;/span&gt;
-            </code>
+			<code>
+				&lt;span data-lettering="letters"&gt;This is a sentence&lt;/span&gt;
+				<br/>
+				&lt;span data-lettering="words"&gt;This is a sentence&lt;/span&gt;
+				<br/>
+				&lt;div data-lettering="lines"&gt;This&lt;br/&gt;is&lt;br/&gt;a&lt;br/&gt;sentence&lt;/div&gt;
+			</code>
 
-        </section>
+		</div>
 
-    </div>
+	</div>
 
 </body>
 </html>

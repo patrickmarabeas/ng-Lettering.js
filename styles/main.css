@@ -1,183 +1,160 @@
-@font-face {
-    font-family: 'franchiseregular';
-    src: url('franchise-bold-webfont-webfont.eot');
-    src: url('franchise-bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
-    url('franchise-bold-webfont-webfont.woff') format('woff'),
-    url('franchise-bold-webfont-webfont.ttf') format('truetype'),
-    url('franchise-bold-webfont-webfont.svg#franchiseregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+html, body {
+	margin: 0; padding: 0;
 }
 
 body {
-    background-color: #2f3c45;
+    /*background-color: #2f3c45;*/
+	padding-top: 50px;
 }
 
-.wrapper {
-    width: 960px;
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('fonts/OpenSans-Regular-webfont.eot');
+	src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Regular-webfont.woff') format('woff'), url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-header {
-    width: 220px;
-    position: fixed;
-    float: left;
-    margin: 50px 0px 0px 50px;
-    background-color: ;
-
-    -webkit-border-top-right-radius: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    -moz-border-radius-topright: 5px;
-    -moz-border-radius-bottomright: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-header h1 {
-    color: white;
-
-}
-
-header h2 {
-    color: white;
-    font-weight: normal;
-}
-
-header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header li {
-    padding: 5px;
-    background-color: black;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-header li a {
-    color: white;
-    display: block;
-    font-size: 12px;
-    text-decoration: none;
-}
-
-header li a:hover {
-    text-decoration: underline;
-}
-
-header li a.github {
-    font-weight: bold;
-    padding: 5px;
-    font-size: 20px;
-}
-
-header p {
-    color: white;
-    padding: 5px;
-}
-
-header p a {
-    color: white;
-    text-decoration: none;
-}
-
-header p a:hover {
-    text-decoration: underline;
-}
-
-section {
-    width: 650px;
-    float: right;
+p {
+	font-size: 16px;
+	line-height: 1.8em;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
 }
 
 code {
-    display: block;
-    color: #fff;
-    margin-bottom: 15px;
+	display: block;
+	margin-left: 20px;
+	font-size: 16px;
 }
 
-section h1 {
-    font-family: 'franchiseregular', Verdana, Arial, sans-serif;
-    font-size: 160px;
-    text-transform: uppercase;
-    margin: 30px 0 -30px 0;
+#top {
+	width: 100%;
+	background-color: #1F2325;
+	color: white;
+	position: fixed;
+	top: 0;
+	z-index: 100;
 }
 
-h1 span {
-    position: relative;
-}
-h1 span:hover {
-    top: 3px;
-}
-
-.char1, .char12 {
-    color: #c44032;
-    text-shadow: #863027 -4px 4px 0;
-}
-.char2, .char11 {
-    color: #e36b23;
-    text-shadow: #9b4d1f -4px 4px 0;
-}
-.char3, .char10 {
-    color:#e6c92e;
-    text-shadow: #9c8b26 -4px 4px 0;
-}
-.char4, .char9 {
-    color:#5da028;
-    text-shadow: #427021 -4px 4px 0;
-}
-.char5, .char8 {
-    color:#4584be;
-    text-shadow:#2f597f -4px 4px 0;
-}
-.char6, .char7 {
-    color:#7073cf;
-    text-shadow:#4a4d88 -4px 4px 0;
+#top > a {
+	font-family: 'open_sansregular', verdana, sans-serif;
+	line-height: 50px;
+	margin: 0 10px;
+	color: #f0efee;
 }
 
-.char4, .char6 {
-    top: -10px;
-}
-.char10 {
-    top: -65px;
-}
-
-section h2 {
-    margin: 0;
-    color: #2f3c45;
-    font-family: Georgia, serif;
-    font-weight: normal;
-
-    font-size: 0.01em;
-    line-height: 0;
-    margin-bottom: 10px;
-    word-spacing: -0.5em;
+.page {
+	color: #1f2325;
+	max-width: 960px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 100px;
 }
 
-section h2 span {
-    background-color: #fff;
-
-    font-size: 30px;
-    line-height: 40px;
-    padding: 0 5px;
+.page header {
+	margin-top: 30px;
+	overflow: hidden;
 }
 
-.word2 {
-    border-top: 5px solid #c44032;
-    font-weight: bold;
-    color: #c44032;
+.page header h1,
+.page header h2,
+.page header h3,
+.page header h4 {
+	color: white;
+	font-family: 'open_sansregular', sans-serif;
+	font-weight: normal;
+	font-size: 0.01em;
+	word-spacing: -0.5em;
+
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	float: left;
+	clear: both;
 }
 
-h3 {
-    color: #fff;
-    font-weight: normal;
+
+.page header span {
+	display: inline-block;
+	margin: 0 0 1px 0;
+	float: left;
 }
 
-h3 a {
-    color: #fff;
+.page header span[class^="char"] {
+	padding: 0;
+}
+.page header span[class^="word"] {
+	padding: 0 .15em;
 }
 
-h3 a:hover {
-    color: #c44032;
+
+
+.page header h1 span {
+	font-size: 150px;
+	background-color: #1F2325;
+	color: white;
+}
+
+.page header h2 span {
+	font-size: 80px;
+	color: white;
+	width: .7em;
+	text-align: center;
+	margin-bottom: 1px;
+	position: relative;
+	padding: 0 !important;
+}
+
+
+.page header h2 span:nth-child(even) {
+	-webkit-transform: scale(1) skewY(-15deg);
+	-moz-transform: scale(1) skewY(-15deg);
+	-ms-transform: scale(1) skewY(-15deg);
+	-o-transform: scale(1) skewY(-15deg);
+	transform: scale(1) skewY(-15deg);
+	background-color: #c94b4b;
+}
+
+.page header h2 span:nth-child(odd) {
+	-webkit-transform: scale(1) skewY(15deg);
+	-moz-transform: scale(1) skewY(15deg);
+	-ms-transform: scale(1) skewY(15deg);
+	-o-transform: scale(1) skewY(15deg);
+	transform: scale(1) skewY(15deg);
+	background-color: #F06060;
+}
+
+
+.page header h3 span {
+	font-size: 40px;
+	background-color: #1F2325;
+	color: white;
+}
+
+.page header h4 span {
+	font-size: 21px;
+	background-color: #1F2325;
+	color: white;
+}
+
+
+#content {
+	margin-top: 20px;
+
+}
+
+#content h2 {
+	font-family: 'open_sansregular', sans-serif;
+	font-weight: normal;
+}
+
+
+@media all and (max-width: 640px) {
+	body {
+		padding-top: 0;
+	}
+
+	#top {
+		position: relative;
+	}
 }
