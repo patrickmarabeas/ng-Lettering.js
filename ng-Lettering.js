@@ -1,5 +1,5 @@
 /* ng-Lettering v1.0.0
- * https://github.com/patrickmarabeas/ng-Lettering
+ * https://github.com/patrickmarabeas/ng-Lettering.js
  *
  * Original jQuery project: https://github.com/davatron5000/Lettering.js
  *
