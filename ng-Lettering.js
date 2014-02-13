@@ -1,4 +1,4 @@
-/* ng-Lettering.js v1.0.1
+/* ng-Lettering.js v1.0.2
  * https://github.com/patrickmarabeas/ng-Lettering.js
  *
  * Original jQuery project: https://github.com/davatron5000/Lettering.js
@@ -9,6 +9,8 @@
  *
  * Date: 18/11/2013
  */
+
+'use strict';
 
 angular.module( 'ngLettering', [] )
 .directive( 'lettering', [ function () {
