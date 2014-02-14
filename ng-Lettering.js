@@ -3,7 +3,7 @@
  *
  * Original jQuery project: https://github.com/davatron5000/Lettering.js
  *
- * Copyright 2013, Patrick Marabeas http://pulse-dev.com
+ * Copyright 2013, Patrick Marabeas http://marabeas.io
  * Released under the MIT license
  * http://opensource.org/licenses/mit-license.php
  *
