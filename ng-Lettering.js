@@ -15,6 +15,7 @@
 angular.module( 'ngLettering', [] )
 .directive( 'lettering', [ function () {
 	return {
+		priority: 1,
 		restrict: 'A',
 		link: function( scope, element, attrs ) {
 
@@ -46,9 +47,14 @@ angular.module( 'ngLettering', [] )
 					element.append( inject );
 				}
 			}
-
 			scope.method = attrs.lettering || 'letters';
-			methods[scope.method]();
+			if (attrs.ngBind) {
+	      scope.$watch(attrs.ngBind, function(newvalue) {
+					methods[scope.method]();
+	      }); 
+			} else {
+				methods[scope.method]();
+			}
 		}
 	}
 }]);

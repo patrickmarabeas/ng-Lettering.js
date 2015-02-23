@@ -1,0 +1,28 @@
+{
+  "name": "ng-Lettering.js",
+  "version": "1.0.2",
+  "description": "### ng-Lettering.js is an AngularJS &lt;span&gt; injector for radical Web Typography.",
+  "main": "ng-Lettering.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickmarabeas/ng-Lettering.js"
+  },
+  "keywords": [
+    "angular",
+    "typography",
+    "span",
+    "injection"
+  ],
+  "author": "Patrick Marabeas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrickmarabeas/ng-Lettering.js/issues"
+  },
+  "homepage": "https://github.com/patrickmarabeas/ng-Lettering.js"
+}
